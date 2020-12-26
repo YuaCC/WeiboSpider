@@ -104,7 +104,7 @@ class SearchSpider(WeiboSpider):
         return res
 
 spider = SearchSpider( )
-res = spider.search_pinyin(['yve','pao'])
+res = spider.search_pinyin(['pao','bu'])
 with open('res.pth','w') as f:
     pickle.dump(res,f)
 # spider.like_all(3937348351)
